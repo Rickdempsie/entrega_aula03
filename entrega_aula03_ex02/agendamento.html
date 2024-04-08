@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main> 
+      <h2>Agendamento de consulta</h2>
+      <form action="">
+        <fieldset>
+           <legend>Informações Pessoais</legend>
+           <label for="nome">Nome Completo:</label>
+           <input type="text" name="campo_nome" id="nome" placeholder="Digite seu nome completo" required>
+           <br>
+            <label for="email">Endereço de Email:</label>
+            <input type="email" name="campo_email" id="email" placeholder="Digite seu endereço de email" required>
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="campo_tel" id="telefone" placeholder="Digite seu telefone" required>           
+            <br>
+            <label for="idade">Idade</label>
+             <input type="text" name="campo_idade" id="idade" required>
+             <br>
+             <label for="especialidade">Especialidade Médica:</label>
+             <select name="campo_espec" id="especialidade">
+              <option value="">Selecione uma especialidade</option>
+              <option value="cardiologia">Cardiologia</option>
+              <option value="dermatologia">Dermatologia</option>
+              <option value="ginecologia">Ginecologia</option>
+              <option value="endocrinologia">Endocrinologia</option>
+              <option value="neurologia">Neurologia</option>
+              <option value="oftalmologia">Oftalmologia</option>
+              <option value="psiquiatria">Psiquiatria</option>
+             </select>
+        </fieldset>
+         <fieldset>
+              <legend>Preferências de horário</legend>
+              <label for="data">Data Preferencial:</label>
+              <input type="date" name="campo_data" id="data" required>
+              <br>
+              <label for="horario">Horário Preferencial:</label>
+              <input type="time" name="campo_horario" id="horario" required>
+         </fieldset>
+               <fieldset>
+                <legend>Observações adicionais</legend>
+                <textarea name="campo_obs" id="obs" cols="25" rows="2" placeholder="Digite aqui suas observações"></textarea>
+               </fieldset>
+
+               <input type="submit" value="Agendar Consulta">
+               
+         </form>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
